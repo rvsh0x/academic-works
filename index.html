@@ -5,46 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rachid Ghodbane — Computer Science Student</title>
   <meta name="description" content="Site académique d'un étudiant en informatique : documents, projets, et publications scientifiques.">
-<style>
-/* Style épuré type LaTeX / Wikipedia */
-:root{--fg:#111;--bg:#fff;--muted:#5a5a5a;--link:#0645ad;--link-visited:#0b0080;--hr:#e5e5e5}
-@media (prefers-color-scheme: dark){:root{--fg:#eaeaea;--bg:#0b0f14;--muted:#a0a0a0;--link:#accaef;--link-visited:#c0b5f0;--hr:#1e2937}}
-html{font-size:16px}
-body{margin:0;background:var(--bg);color:var(--fg);font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", Times, serif;line-height:1.6}
-.wrap{max-width:72ch;margin:0 auto;padding:2.2rem 1rem}
-header{margin-bottom:1rem}
-h1{font-size:1.9rem;font-weight:600;margin:0 0 .25rem 0}
-h2{font-size:1.25rem;font-weight:600;margin:1.6rem 0 .4rem 0}
-h3{font-size:1.05rem;margin:1.2rem 0 .3rem 0}
-.muted{color:var(--muted)}
-nav{margin:.35rem 0 .2rem 0;font-size:.95rem}
-nav a{color:var(--link);text-decoration:none}
-nav a:hover{text-decoration:underline}
-a{color:var(--link)}
-a:visited{color:var(--link-visited)}
-p{margin:.6rem 0}
-ul{margin:.4rem 0 .8rem 1.2rem}
-li{margin:.25rem 0}
-hr{border:0;border-top:1px solid var(--hr);margin:1.2rem 0}
-section{margin:1rem 0}
-.tag{font-size:.85rem;color:var(--muted)}
-footer{margin-top:2rem;color:var(--muted);font-size:.9rem}
-.btn{font-size:.95rem;border:1px solid var(--hr);padding:.35rem .55rem;border-radius:4px;text-decoration:none;color:var(--fg)}
-.btn:hover{background:rgba(0,0,0,.03)}
-@media print{nav,.no-print{display:none}}
-</style>
+
 </head>
 <body>
   <main class="wrap">
     <header>
-      <img class="avatar" src="avatar.jpg" alt="Photo de profil">
       <div>
         <h1>Ghodbane Rachid</h1>
         <div class="muted">Computer Science student — Université Jean Monnet, Saint-Étienne</div>
         <nav>
           <a href="#publications">Publications</a>
-          <a href="#cv">CV</a>
-          <a href="#contact">Contact</a>
         </nav>
       </div>
     </header>
@@ -52,35 +22,32 @@ footer{margin-top:2rem;color:var(--muted);font-size:.9rem}
     <section aria-labelledby="about">
       <h2 id="about">À propos</h2>
       <p>
-        Ce site rassemble quelques travaux académiques et personnels.
+        Quelques travaux académiques et personnels...
+        Mon portfolio : <a href="https://rvsh0x.pro">rvsh0x.pro</a>
       </p>
-      <div class="grid no-print">
-        <a class="btn" href="CV.pdf" id="cv">Télécharger le CV (PDF)</a>
-        <a class="btn" href="mailto:prenom.nom@example.com">prenom.nom@example.com</a>
-      </div>
     </section>
 
     <section id="publications" aria-labelledby="pubs">
       <h2 id="pubs">Publications / Documents</h2>
 
       <div class="pub">
-        <div><strong>Étude sur la sphérocytose héréditaire</strong> — <em>Travail de recherche</em> <span class="tag">biologie</span></div>
+        <div><strong>Étude sur la sphérocytose héréditaire</strong> — <em>Travail de recherche</em> <span class="tag">Biologie Humaine</span></div>
         <div>
-          <a href="papers/Spherocytose.pdf">PDF</a>
+          <a href="papers/Spherocytose.pdf">Sphérocytose héréditaire</a>
         </div>
       </div>
 
       <div class="pub">
-        <div><strong>Conception et pilotage d’un afficheur 7 segments</strong> — <em>Travail d’électronique</em> <span class="tag">électronique</span></div>
+        <div><strong>Circuits combinatoires d’un afficheur 7 segments, et implémentation sur tableur</strong> — <em>Travail d’électronique</em> <span class="tag">électronique</span></div>
         <div>
-          <a href="papers/Afficheur.pdf">PDF</a>
+          <a href="papers/Afficheur.pdf">Afficheur 7 segments</a>
         </div>
       </div>
 
       <div class="pub">
-        <div><strong>Analyseur syntaxique en assembleur x86_64</strong> — <em>Rapport de projet</em> <span class="tag">informatique</span></div>
+        <div><strong>Analyseur syntaxique de parenthésage en assembleur x86_64</strong> — <em>Rapport de projet</em> <span class="tag">Programmation bas niveau</span></div>
         <div>
-          <a href="papers/Analyseur_x86_64.pdf">PDF</a>
+          <a href="papers/Analyseur_x86_64.pdf">Analyseur_x86_64</a>
         </div>
       </div>
 
@@ -90,7 +57,7 @@ footer{margin-top:2rem;color:var(--muted);font-size:.9rem}
     <section id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
       <ul>
-        <li>Email : <a href="mailto:prenom.nom@example.com">rachid.ghodbane@outlook.fr</a></li>
+        <li>Email : <a href="mailto:prenom.nom@example.com">rachid.ghodbane@etu.univ-st-etienne.fr</a></li>
       </ul>
     </section>
 
