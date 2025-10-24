@@ -6,6 +6,55 @@
   <title>Rachid Ghodbane — Computer Science Student</title>
   <meta name="description" content="Site académique d'un étudiant en informatique : documents, projets, et publications scientifiques.">
 
+  <style>
+  body {
+    font-family: "Times New Roman", Georgia, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+    background: #fff;
+    color: #111;
+  }
+  main.wrap {
+    max-width: none; /* suppression de la largeur fixe */
+    margin: 0;       /* plus de centrage */
+    padding: 0;
+  }
+  h1, h2, h3 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+  section {
+    margin-top: 2.5rem;
+  }
+  .muted {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .pub {
+    margin-bottom: 1.2rem;
+  }
+  a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: left;
+  }
+</style>
+
+
 </head>
 <body>
   <main class="wrap">
@@ -13,62 +62,59 @@
       <div>
         <h1>Ghodbane Rachid</h1>
         <div class="muted">Computer Science student — Université Jean Monnet, Saint-Étienne</div>
-        <nav>
-          <a href="#publications">Publications</a>
-        </nav>
       </div>
     </header>
 
     <section aria-labelledby="about">
-      <h2 id="about">À propos</h2>
+      <h3 id="about">À propos</h3>
       <p>
         Quelques travaux académiques et personnels...
-        Mon portfolio : <a href="https://rvsh0x.pro">rvsh0x.pro</a>
       </p>
     </section>
-
+  
     <section id="publications" aria-labelledby="pubs">
-      <h2 id="pubs">Publications / Documents</h2>
+      <h3 id="pubs">Publications</h3>
 
       <div class="pub">
-        <div><strong>Étude sur la sphérocytose héréditaire</strong> — <em>Travail de recherche</em> <span class="tag">Biologie Humaine</span></div>
+        <div><strong>Étude sur la sphérocytose héréditaire</strong> — <em>Biologie générale humaine</em> </div> 
         <div>
           <a href="papers/Spherocytose.pdf">Sphérocytose héréditaire</a>
         </div>
       </div>
-
+    
       <div class="pub">
-        <div><strong>Circuits combinatoires d’un afficheur 7 segments, et implémentation sur tableur</strong> — <em>Travail d’électronique</em> <span class="tag">électronique</span></div>
+        <div><strong>Circuits combinatoires, Afficheur 7 segments et implémentation sur tableur</strong> — <em>Logique & électronique</em>  </div>        
         <div>
           <a href="papers/Afficheur.pdf">Afficheur 7 segments</a>
         </div>
-      </div>
-
+      </div>   
+   
       <div class="pub">
-        <div><strong>Analyseur syntaxique de parenthésage en assembleur x86_64</strong> — <em>Rapport de projet</em> <span class="tag">Programmation bas niveau</span></div>
+        <div><strong>Analyseur syntaxique de parenthésage en assembleur x86_64</strong> — <em>Programmation bas niveau</em> </div>
         <div>
           <a href="papers/Analyseur_x86_64.pdf">Analyseur_x86_64</a>
         </div>
       </div>
-
+    
     </section>
-
-
+  
+    
     <section id="contact" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
       <ul>
-        <li>Email : <a href="mailto:prenom.nom@example.com">rachid.ghodbane@etu.univ-st-etienne.fr</a></li>
+        <li>Email : <a href="mailto:rachid.ghodbane@etu.univ-st-etienne.fr.com">rachid.ghodbane@etu.univ-st-etienne.fr</a></li>
+        <li>Portfolio : <a href="https://rvsh0x.pro">rvsh0x.pro</a></li>
       </ul>
     </section>
-
+     
     <footer>
       © <span id="y"></span> Rachid Ghodbane — Dernière mise à jour : <time id="updated"></time>
     </footer>
-  </main>
+  </main>  
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
     document.getElementById('updated').textContent = new Date().toISOString().slice(0,10);
   </script>
 </body>
 </html>
-
+        
