@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rachid Ghodbane — Computer Science Student</title>
+  <meta name="description" content="Site académique d'un étudiant en informatique : documents, projets, et publications scientifiques.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E🎓%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{--fg:#111;--bg:#fff;--muted:#6b7280;--link:#0f766e;--card:#f8fafc;--border:#e5e7eb}
+    @media (prefers-color-scheme: dark){:root{--fg:#e5e7eb;--bg:#0b0f14;--muted:#9aa4b2;--link:#34d399;--card:#0f1520;--border:#1f2937}}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji"}
+    .wrap{max-width:900px;margin:0 auto;padding:32px 16px}
+    header{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+    .avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;border:1px solid var(--border)}
+    h1{font-size:28px;margin:0}
+    .muted{color:var(--muted)}
+    nav{margin-top:8px;display:flex;flex-wrap:wrap;gap:12px}
+    nav a{color:var(--link);text-decoration:none;border-bottom:1px solid transparent}
+    nav a:hover{border-color:var(--link)}
+    section{margin:28px 0;padding:20px;border:1px solid var(--border);border-radius:12px;background:var(--card)}
+    section h2{margin:0 0 12px 0;font-size:20px}
+    ul{padding-left:18px;margin:8px 0}
+    li{margin:8px 0}
+    .pub{margin:12px 0}
+    .tag{display:inline-block;font-size:12px;padding:2px 8px;border:1px solid var(--border);border-radius:999px;color:var(--muted)}
+    footer{margin-top:36px;color:var(--muted);font-size:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:720px){.grid{grid-template-columns:1fr 1fr}}
+    a.btn{display:inline-block;padding:8px 12px;border:1px solid var(--border);border-radius:10px;color:var(--fg);text-decoration:none}
+    a.btn:hover{border-color:var(--link)}
+    /* Print */
+    @media print{nav, .no-print{display:none} section{break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <img class="avatar" src="avatar.jpg" alt="Photo de profil">
+      <div>
+        <h1>Ghodbane Rachid</h1>
+        <div class="muted">Computer Science student — Université Jean Monnet, Saint-Étienne</div>
+        <nav>
+          <a href="#publications">Publications</a>
+          <a href="#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section aria-labelledby="about">
+      <h2 id="about">À propos</h2>
+      <p>
+        Ce site rassemble quelques travaux académiques et personnels.
+      </p>
+      <div class="grid no-print">
+        <a class="btn" href="CV.pdf" id="cv">Télécharger le CV (PDF)</a>
+        <a class="btn" href="mailto:prenom.nom@example.com">prenom.nom@example.com</a>
+      </div>
+    </section>
+
+    <section id="publications" aria-labelledby="pubs">
+      <h2 id="pubs">Publications / Documents</h2>
+
+      <div class="pub">
+        <div><strong>Étude sur la sphérocytose héréditaire</strong> — <em>Travail de recherche</em> <span class="tag">biologie</span></div>
+        <div>
+          <a href="papers/Spherocytose.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div><strong>Conception et pilotage d’un afficheur 7 segments</strong> — <em>Travail d’électronique</em> <span class="tag">électronique</span></div>
+        <div>
+          <a href="papers/Afficheur.pdf">PDF</a>
+        </div>
+      </div>
+
+      <div class="pub">
+        <div><strong>Analyseur syntaxique en assembleur x86_64</strong> — <em>Rapport de projet</em> <span class="tag">informatique</span></div>
+        <div>
+          <a href="papers/Analyseur_x86_64.pdf">PDF</a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <ul>
+        <li>Email : <a href="mailto:prenom.nom@example.com">rachid.ghodbane@outlook.fr</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Rachid Ghodbane — Dernière mise à jour : <time id="updated"></time>
+    </footer>
+  </main>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    document.getElementById('updated').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
+
